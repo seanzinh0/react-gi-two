@@ -28,8 +28,8 @@ const Search = () => {
     }
     return (
         <>
-            <div className='flex flex-col justify-center mt-80 gap-5'>
-                <h1 className='flex justify-center text-3xl'>Find Similar Movies Here</h1>
+            <div className='flex flex-col justify-center sm:mt-36 gap-5 min-[320px]:mt-16 lg:mt-48'>
+                <h1 className='flex justify-center text-3xl text-center'>Find Similar Movies Here</h1>
                 <div className='flex justify-center'>
                     <form onSubmit={searchMovie}>
                         <input className='pl-2 rounded-bl-md rounded-tl-md outline-0 h-12' type='text' placeholder='Enter a movie' value={search} onChange={changeSearchInput}></input>
