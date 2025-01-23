@@ -9,12 +9,12 @@ const Results = () => {
     const {results = [], query = ''} = location.state || {};
     return(
         <>
-            <ResultsTitle props={query}/>
+            <ResultsTitle query={query}/>
             <div className='mb-20'>
             <Search/>
             </div>
             <div className='flex justify-center'>
-            <MovieCards props={results}/>
+            <MovieCards results={results}/>
             </div>
         </>
     )
