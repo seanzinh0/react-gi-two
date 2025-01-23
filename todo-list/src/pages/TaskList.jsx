@@ -21,7 +21,7 @@ const TaskList = () => {
         const newTask = {
             title: e.target[0].value,
             description,
-            id: id + 1
+            id: id
         }
         setTasks([...tasks, newTask]);
         localStorage.setItem("tasks", JSON.stringify([...tasks, newTask]));
