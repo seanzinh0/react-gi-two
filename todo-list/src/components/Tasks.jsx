@@ -6,10 +6,10 @@ const Tasks = ({tasks, deleteTask}) => {
             {tasks.map((task) => (
                 <li key={task.id}
                     className='flex gap-5 bg-white justify-between border-2 border-gray-600 p-4 h-16 items-center rounded-2xl'>
-                    <input type='checkbox' className='size-6'></input>
+                    <input type='checkbox' className='size-6 accent-green-500'></input>
                     <p>{task.title}</p>
                     <div className='flex gap-2'>
-                    <Link to={`/details/${task.id}`}>
+                    <Link to={`/details/${task.id}`} state={{task}}>
                         <button className='bg-zinc-900 text-white h-8 w-24 rounded-xl hover:bg-zinc-600'>Details
                         </button>
                     </Link>
