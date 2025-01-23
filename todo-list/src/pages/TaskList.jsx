@@ -7,6 +7,7 @@ const TaskList = () => {
     const [tasks, setTasks] = useState([]);
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
+    const [id, setID] = useState("");
 
     useEffect(() => {
         const storedTasks = localStorage.getItem("tasks");
@@ -20,12 +21,13 @@ const TaskList = () => {
         const newTask = {
             title: e.target[0].value,
             description,
-            id: tasks.length + 1
+            id: id
         }
         setTasks([...tasks, newTask]);
         localStorage.setItem("tasks", JSON.stringify([...tasks, newTask]));
         setTitle("");
         setDescription("");
+        setID(id + 1);
     }
 
     const deleteTask = (id) => {
