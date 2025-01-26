@@ -1,6 +1,6 @@
 const TaskForm = ({createTask , setTitle, setDescription, title, description}) => {
 
-    // create task when form is submitted using onchange event to manipulate the state thats passed as props
+    // create task when form is submitted using onchange event to manipulate the state thats passed as props and uses the function that is passed to submit the form and create task
     const submitForm = (e) => {
         createTask(e)
     }
