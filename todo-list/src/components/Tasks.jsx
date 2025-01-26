@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
 
 const Tasks = ({tasks, deleteTask}) => {
+    // maps tasks out based on the tasks array and adds the prop of deleteTask as function for the delete button also links details to the details page based off the id of the task
     return (
         <ul className='flex flex-col gap-5 mt-4'>
             {tasks.map((task) => (

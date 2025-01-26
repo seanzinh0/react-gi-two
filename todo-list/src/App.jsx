@@ -6,7 +6,7 @@ import TaskDetails from "./pages/TaskDetails.jsx";
 
 function App() {
 
-
+  // Setup react router to use layout to keep header consistent
   return (
     <>
       <BrowserRouter>

@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 
+// component that uses async function to access TMDB database to search for similar movies and sets the search state on change
 const Search = () => {
     const [search, setSearch] = useState("");
     const navigate = useNavigate();

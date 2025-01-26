@@ -1,3 +1,4 @@
+// card component that takes the results as props to map and display each similar movie
 const MovieCards = ({results}) => {
     return(
         <>

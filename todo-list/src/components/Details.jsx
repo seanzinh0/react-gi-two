@@ -1,4 +1,5 @@
 const Details = ({title, setTitle, description, setDescription, updateTask}) => {
+    // displays the task details with the props that are passed and allows for editing with onchange
     return (
         <form onSubmit={updateTask} className='flex flex-col w-1/3 border-2 border-gray-600 rounded-2xl items-center bg-white'>
             <label className='text-2xl text-center mt-3'>Title:</label>

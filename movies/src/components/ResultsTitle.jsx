@@ -1,3 +1,4 @@
+// component that takes search query as props to show what movie you searched for
 const ResultsTitle = ({query}) => {
     return(
         <>

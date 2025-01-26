@@ -1,8 +1,10 @@
 import {useState} from 'react'
 
 function Counter() {
+    // set state to 0 for count
     const [count, setCount] = useState(0)
 
+    // add onClick event that increments and decrements count
     return (
         <>
             <div className="flex flex-col min-h-screen justify-center gap-3">
