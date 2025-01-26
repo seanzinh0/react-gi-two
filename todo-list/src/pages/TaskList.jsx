@@ -57,7 +57,7 @@ const TaskList = () => {
                 </div>
                 <div className='flex flex-col'>
                     <h1 className='text-3xl text-center'>Tasks</h1>
-                    {/*checks if theres tasks to display the component or not*/}
+                    {/*checks if theres tasks to display the component or not */}
                     {tasks.length > 0 ? (<Tasks tasks={tasks} deleteTask={deleteTask}/>) : (<p className='mt-4'>No Tasks Available</p>)}
                 </div>
             </div>
