@@ -37,6 +37,7 @@ const TaskList = () => {
         setDescription("");
         const newID = id + 1;
         setID(newID);
+        // need to store id locally so that if page rerenders the state doesn't
         localStorage.setItem("id", JSON.stringify(newID));
     }
 
